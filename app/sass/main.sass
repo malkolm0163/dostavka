@@ -1,0 +1,862 @@
+
+@import "vars"
+*
+  margin: 0
+  padding: 0
+a, img
+  outline: none!important
+body
+  background-color: #fff
+  font-family: $GothamPro
+  color: #ffffff
+  font-size: 16px
+  line-height: 1
+img
+  max-width: 100%
+
+ul.list
+  list-style-type: none
+  margin-bottom: 5px
+  margin-top: 5px
+  li
+    padding-left: 15px
+    position: relative
+    padding-bottom: 5px
+    &:before
+      height: 5px
+      width: 5px
+      background-color: $accent-color
+      position: absolute
+      left: 4px
+      top: 5px
+      content: ''
+.visible-sm
+  display: none
+.visible-xs
+  display: none
+.col-sm-offset-05, .col-md-offset-05, .col-lg-offset-05
+  margin-left: 3.125%
+//.hidden-xs
+//  display: block
+//.hidden-sm
+//  display: block
+.row
+  margin-left: 70px
+  margin-right: 70px
+.root
+  max-width: 2560px
+  margin: 0 auto
+.btn
+  display: inline-block
+  padding: 10px 20px
+  text-align: center
+  color: $accent-color
+  border: 1px solid $accent-color
+  border-radius: 100px
+  text-decoration: none!important
+  background-color: transparent
+  &:hover
+    background-color: rgba(255, 255, 255, .2)
+    color: $accent-color
+    text-decoration: none!important
+  &:active
+    background-color: $accent-color
+    color: $main-color
+    text-decoration: none!important
+  &:focus
+    color: $accent-color
+.link
+  color: $accent-color
+  border-bottom: 1px dashed $accent-color
+  text-decoration: none
+  &:hover
+    border-bottom-style: solid
+    text-decoration: none
+    color: $accent-color
+
+  /*  CUSTOMS */
+.main-header
+  background: url("../img/headerbd.jpg") center 0 no-repeat
+  height: 850px
+  position: relative
+.header-top-line
+  background-color: $main-color
+  border-bottom: 1px solid #0b567f
+  .border-class
+    border-bottom: 1px solid #062f45
+  table
+    width: 100%
+    td
+      text-align: center
+      border-left: 1px solid #0b567f
+      .border-left
+        border-left: 1px solid #062f45
+      &:first-child
+        border: none
+      &:hover
+        background-color: #062f45
+      a
+        color: #fff
+        padding: 10px 0
+        display: inline-block
+        font-size: 13px
+        font-family: $GothamProLight
+        text-decoration: none
+  .btn-nav-menu
+    position: absolute
+    right: 30px
+    top: 10px
+    font-size: 24px
+    text-align: right
+    cursor: pointer
+.header-top-content
+  background-color: $main-color
+  .logo-wrap
+    padding: 10px 0 15px
+  .lk-wrap
+    text-align: center
+    padding-top: 25px
+    a
+      display: inline-block
+      position: relative
+      &:before
+        background-image: url(../img/lk-icon.png)
+        position: absolute
+        top: -2px
+        left: -30px
+        width: 22px
+        height: 22px
+        display: block
+        content: ''
+.top-contacts-wrap
+  font-family: $PFDinTextCondProLightItalic
+  text-align: right
+  text-transform: uppercase
+  padding-top: 18px
+
+.header-get-call
+  background: url("../img/get-call-line.png") center 0 no-repeat
+  .get-call-wrap
+    height: 20px
+    .get-call
+      position: relative
+      top: -10px
+      a
+        text-decoration: underline
+        text-align: right
+        display: block
+        padding-right: 20px
+        color: #fff
+.header-main-content
+  position: absolute
+  bottom: 0
+  width: 100%
+  .rel
+    position: relative
+    height: 703px
+  .header-text-wrap
+    position: absolute
+    bottom: 0
+    padding-bottom: 10px
+  .row
+    margin-left: -10px
+    margin-right: -10px
+.top-text-wrap
+  padding-bottom: 275px
+  h1
+    font-size: 50px
+    text-transform: uppercase
+    font-family: $PFDinTextCondProBoldItalic
+    margin-bottom: 15px
+    margin-top: 0
+  p
+    margin-bottom: 30px
+
+.zero-wrap
+  height: 110px
+  width: 85%
+  .zero
+    font: 105px/1 $PFDinTextCondProMediumItalic
+    float: left
+    width: 60px
+  p
+  span
+    padding-top: 15px
+    font: 44px/44px $PFDinTextCondProMediumItalic
+    display: block
+
+/* partners */
+
+.partners
+  color: $darkTextColor
+  padding: 70px 0
+  .section-header
+    font: 30px $PFDinTextCondProItalic
+    text-transform: uppercase
+    text-align: center
+  .partners-logos
+    table
+      width: 100%
+      margin-top: 50px
+      td
+        text-align: center
+        a
+          display: inline-block
+          padding: 5px
+          img
+            opacity: .8
+            &:hover
+              opacity: 1
+.delivery
+  background: url("../img/delivery.jpg") center 0 no-repeat
+  .delivery-wrap
+    height: 610px
+    padding-top: 40px
+    .director
+      height: 100%
+      position: relative
+      img
+        position: absolute
+        bottom: 79px
+  .delivery-text
+    height: 100%
+    position: relative
+    .delivery-header
+      padding-top: 50px
+      padding-bottom: 45px
+    h2
+      font: 30px $PFDinTextCondProMediumItalic
+      text-transform: uppercase
+    p.intro
+      padding-bottom: 20px
+    .description
+      bottom: 0
+      position: absolute
+      width: 100%
+      padding-bottom: 30px
+      .gen
+        padding-top: 15px
+        width: 40%
+        float: left
+        .position
+          font-size: 14px
+        .fio
+          font-family: $PFDinTextCondProItalic
+          font-size: 21px
+          text-transform: uppercase
+      .video
+        width: 60%
+        float: left
+        .video-btn
+          display: block
+          float: left
+          a
+            display: inline-block
+            float: left
+            margin-right: 15px
+        .link
+          padding-top: 15px
+        .video-link-text
+          padding-top: 15px
+        .video-link
+          border-radius: 50%
+          box-shadow: 0 0 20px 2px  rgba(255, 255, 255, 0.6)
+          transition: box-shadow .3s
+          &:hover
+            box-shadow: 0 0 20px 2px  rgba(255, 255, 255, 0.3)
+.scheme-content
+  padding: 80px 0 65px
+  color: $darkTextColor
+  .scheme-table
+    h2
+      font-size: 30px
+      font-family: $PFDinTextCondProItalic
+      text-transform: uppercase
+      span
+        font-family: $PFDinTextCondProMediumItalic
+        margin-bottom: 10px
+        display: block
+    .r1
+      min-height: 154px
+      position: relative
+      .c1
+        background: url('../img/scheme/pic_04.png') right 25px /15% 75px no-repeat, url("../img/scheme/pic_01.png") 0 88px /3% 12px no-repeat, url('../img/scheme/pic_02.png') 15% 88px /83% 12px no-repeat
+        height: 154px
+      .c2
+        background: url("../img/scheme/primary_ 1.png") 0 0 no-repeat, url('../img/scheme/pic_02.png') 3% 25px /100% 12px no-repeat
+      .c3
+        background: url("../img/scheme/primary_ 2.png") 0 0 no-repeat, url('../img/scheme/pic_02.png') 3% 25px /100% 12px no-repeat
+      .c4
+        background: url("../img/scheme/cornet-top-top.png") 0 25px no-repeat, url('../img/scheme/line-vert.png') 39px 50px /11px 100% no-repeat
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+    .r2
+      position: relative
+      .c1
+        background: url("../img/scheme/corner-mid-top.png") 0 25px no-repeat, url("../img/scheme/line-vert2.png") 0 50px/10px 100% no-repeat, url("../img/scheme/pic_02.png") 25px 25px/100% 12px no-repeat
+      .c2
+        background: url("../img/scheme/primary_ 3.png") 0 0 no-repeat, url('../img/scheme/pic_02.png') 3% 25px /100% 12px no-repeat
+      .c3
+        background: url("../img/scheme/primary_ 4.png") 0 0 no-repeat, url('../img/scheme/pic_02.png') 3% 25px /100% 12px no-repeat
+      .c4
+        background: url("../img/scheme/primary_ 5.png") 0 0 no-repeat, url('../img/scheme/pic_02.png') 3% 25px /100% 12px no-repeat
+      .c5
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        background: url("../img/scheme/corner-top-bottom.png") 0 0 no-repeat
+    .r3
+      .c1
+        background: url("../img/scheme/corner-mid-bottom.png") 0 0 no-repeat, url("../img/scheme/pic_02.png") 25px 25px/100% 12px no-repeat
+      .c2
+        background: url("../img/scheme/primary_ 6.png") 0 0 no-repeat, url('../img/scheme/pic_02.png') 3% 25px /100% 12px no-repeat
+      .c3
+        background: url("../img/scheme/primary_ 7.png") 0 0 no-repeat, url('../img/scheme/pic_02.png') 3% 25px /72% 12px no-repeat, url('../img/scheme/bottom-line.png') right 25px no-repeat
+      .link-wrap
+        //padding-left: 20px
+        a
+          text-transform: uppercase
+          font-size: 24px
+          font-family: $PFDinTextCondProItalic
+          line-height: 32px
+          text-decoration: none
+          color: $darkTextColor
+          border-color: $darkTextColor
+          &:hover
+            text-decoration: none
+            color: $darkTextColor
+          &:active
+            text-decoration: none
+
+
+    .text-block-wrap
+      padding-top: 70px
+      padding-left: 30px
+      padding-bottom: 15px
+      p
+        font-size: 14px
+        display: inline-block
+        max-width: 80%
+        span.text-block-header
+          font-size: 18px
+          display: block
+          padding-bottom: 10px
+          font-family: $GothamProMedium
+        span.delim
+          margin-top: 8px
+          display: inline-block
+.benefits
+  background: url("../img/benefits-bg.jpg") center 0 /cover no-repeat
+  min-height: 690px
+  padding-top: 115px
+  color: #fff
+  .benefits-header-wrap
+    padding: 30px
+  h2
+    font-family: $PFDinTextCondProItalic
+    font-size: 30px
+    text-transform: uppercase
+    padding-top: 42px
+    span
+      font-family: $PFDinTextCondProBoldItalic
+  .benefit-wrap
+    border-radius: 5px
+    height: 210px
+    box-shadow: 1px 1px 3px 2px rgba(1, 2, 2, 0.32)
+    margin-bottom: 50px
+    position: relative
+    overflow: hidden
+    .fa
+      bottom: 10px
+      right: 10px
+      cursor: pointer
+      transition: transform .5s
+      position: absolute
+    .benefit-text
+      position: absolute
+      background: url("../img/benefit-bg.png") 0 bottom /100% 63px no-repeat
+      height: 63px
+      bottom: 0
+      display: table
+      border-radius: 0 0 5px 5px
+      padding: 13px 90px 10px 20px
+      width: 100%
+      h3
+        font-family: $GothamPro
+        display: table-cell
+        margin-bottom: 10px
+        font-size: 16px
+        vertical-align: middle
+      p
+        display: none
+        margin-bottom: 20px
+      a
+        display: none
+    &.active
+      .benefit-text
+        height: 100%
+        padding: 20px
+        top: 0
+        display: block
+        background: rgba(8, 62, 91, 0.75) none repeat scroll 0 0
+        p
+          display: block
+        h3
+          display: block
+          font-family: $GothamProBold
+        a
+          display: inline
+      .fa
+        transform: rotate(135deg)
+
+.store
+  background: url("../img/benefits/benefit 1.jpg") 0 0 /cover no-repeat
+.equipment
+  background: url("../img/benefits/benefit 2.jpg") 0 0 /cover no-repeat
+.del-point
+  background: url("../img/benefits/benefit 3.jpg") 0 0 /cover no-repeat
+.safe
+  background: url("../img/benefits/benefit 4.jpg") 0 0 /cover no-repeat
+.sms
+  background: url("../img/benefits/benefit 5.jpg") 0 0 /cover no-repeat
+
+
+/*  LK  */
+.lk-content
+  color: $darkTextColor
+  h2
+    font-size: 30px
+    margin-top: 50px
+    text-align: center
+    text-transform: uppercase
+    font-family: $PFDinTextCondProItalic
+  .buttons
+    display: table
+    margin-bottom: 22px
+    margin-top: 45px
+    text-align: center
+    width: 100%
+    .button
+      display: table-cell
+      text-transform: uppercase
+      vertical-align: middle
+      p
+        display: inline-block
+        font-size: 18px
+        line-height: 24px
+        padding: 8px 19px
+        font-family: $PFDinTextCondProItalic
+        transition: color .5s
+        span
+          border-bottom: 1px dashed $darkTextColor
+        &:hover
+          cursor: pointer
+          span
+            border-bottom-style: solid
+      &.active
+        p
+          border: 1px solid
+          border-radius: 27px
+          color: #6b8c9e
+          display: inline-block
+          padding: 8px 19px
+        span
+          border-bottom: none!important
+  .mac
+    background: url("../img/mac.png") 0 0 /100% no-repeat
+    height: 1070px
+    &.row
+      margin-left: -10px
+      margin-right: -10px
+    .mac-screen
+      overflow: hidden
+      padding: 55px 50px 0 55px
+      height: 742px
+      img
+        width: 100%
+        height: 100%
+        display: none
+        &.active
+          display: inline
+  .register
+    text-align: center
+    margin-top: 45px
+    margin-bottom: 70px
+    .registration
+      color: $main-color
+      border-color: $main-color
+      &:active
+        background-color: $main-color
+        color: $accent-color
+/*  HOW TO  */
+.howTo
+  color: #fff
+  max-width: 2560px
+  margin-left: auto
+  margin-right: auto
+  .howTo-preparation
+    min-height: 302px
+    margin-bottom: -20px
+    background: url("../img/howto/preparation.png") center 0 /cover no-repeat
+    .howTo-text
+      height: 282px
+    .howTo-text-wrap
+  .howTo-send-prepare
+    height: 291px
+    margin-bottom: -20px
+    background: url("../img/howto/send-prepare.png") no-repeat center 0
+    .howTo-text-wrap
+      .howTo-text
+        height: 250px
+        padding-left: 20px
+        .num-wrap
+          bottom: 20px
+          span.number
+            line-height: 270px
+  .howTo-delivery
+    height: 298px
+    margin-bottom: -20px
+    background: url("../img/howto/delivery.png") no-repeat center 0
+    .howTo-text
+      height: 278px
+  .howTo-afterService
+    position: relative
+    .afterService-bottom
+      background-color: $main-color
+      position: absolute
+      z-index: 1
+      height: 369px
+      width: 100%
+      margin-top: 20px
+    .as-content
+      height: 409px
+      position: relative
+      width: 100%
+      z-index: 2
+      background: url("../img/howto/afterservice.png") no-repeat center 0
+      .howTo-text-wrap
+        position: relative
+      .howTo-text
+        height: 266px
+        padding-left: 20px
+        .num-wrap span.number
+          line-height: 267px
+      .start-work-wrap
+        text-align: center
+        display: table
+        height: 123px
+        width: 100%
+        .link-wrap
+          vertical-align: middle
+          display: table-cell
+  .howTo-text-wrap
+    h2
+      font-size: 50px
+      padding-top: 83px
+      text-transform: uppercase
+      font-family: $PFDinTextCondProItalic
+      padding-left: 20px
+    .howTo-text
+      display: table
+      position: relative
+      width: 100%
+      padding-top: 20px
+      .block-wrap
+        display: table-cell
+        vertical-align: middle
+      h3
+        text-transform: uppercase
+        font-size: 24px
+        padding-left: 15px
+        padding-bottom: 10px
+        font-family: $PFDinTextCondProItalic
+      .num-wrap
+        display: table
+        top: 0
+        bottom: 0
+        right: 0
+        position: absolute
+        span.number
+          font-family: $PFDinTextCondProItalic
+          display: table-cell
+          font-size: 300px
+          line-height: 300px
+          opacity: .05
+
+/*  WEEK  */
+.week
+  color: $main-color
+  margin-top: 70px
+  background: url("../img/shape.png") no-repeat scroll center 23%
+  .week-header
+    text-align: right
+    font-family: $PFDinTextCondProItalic
+    font-size: 30px
+    text-transform: uppercase
+    span
+      display: block
+      font-size: 90px
+  .week-image
+    img
+      width: 120%
+      max-width: 120%
+  .week-form
+    padding-left: 20px
+    .wf-header
+      height: 20px
+      width: 100%
+      background: url("../img/popup-from-header.png") 0 0 /50% 20px no-repeat
+    .form-wrap
+      background-color: #083f5d
+      color: #fff
+      border-radius: 0 4px 4px 4px
+      text-align: center
+      h3
+        font-size: 22px
+        text-transform: uppercase
+        padding-top: 23px
+        margin-bottom: 15px
+        font-weight: normal
+      p
+        font-size: 18px
+        display: inline-block
+        width: 240px
+        margin-bottom: 20px
+        span
+          font-family: $GothamProMedium
+      form
+        padding-left: 40px
+        padding-right: 40px
+        label
+          span
+            display: inline-block
+            width: 100%
+            text-align: left
+            margin-bottom: 7px
+            font-size: 14px
+            opacity: .5
+            padding-left: 10px
+          input[type=text]
+            padding: 15px 10px
+            margin-bottom: 7px
+            border: none
+            width: 100%
+            border-radius: 3px
+            color: #083f5d
+        input[type=submit]
+          margin-top: 25px
+          margin-bottom: 30px
+/* REVIEW*/
+.review
+  background: url("../img/review-bg.png") center top /cover no-repeat
+  min-height: 729px
+  padding: 40px 0
+  color: #fff
+  margin-top: 30px
+  .review-header
+    h2
+      color: #fff
+      margin-top: 55px
+      font: 30px $PFDinTextCondProItalic
+      margin-bottom: 45px
+      text-transform: uppercase
+  .review-item
+    height: 205px
+    overflow: hidden
+    padding-bottom: 25px
+    .img-wrap
+      float: left
+      width: 32%
+      border-radius: 3px
+      overflow: hidden
+    .text-wrap
+      float: left
+      width: 68%
+      padding: 0 20px
+      h3
+        font: 24px "PF Din Text Cond Pro Italic", sans-serif
+        text-transform: uppercase
+        margin-bottom: 10px
+/*  QUESTIONS */
+.questions
+  //background-color: #fff
+  //z-index: 0
+  color: $main-color
+  .any-questions
+    text-align: center
+    h2
+      text-transform: uppercase
+      font: 30px $PFDinTextCondProItalic
+      margin-bottom: 10px
+    a
+      border-color: $main-color
+      color: $main-color
+/*  FOOTER  */
+.main-footer
+  background: url("../img/map.png") no-repeat center 0
+  height: 769px
+  position: relative
+  .footer-wrap
+    //position: relative
+    //height: 769px
+    .contact
+      margin-top: 164px
+      //width: 410px
+      .contact-header
+        width: 100%
+        height: 35px
+        background: url("../img/contact-header.png") no-repeat 0 0 /100% 35px
+      .contact-content
+        width: 100%
+        background-color: #083f5d
+        padding: 0 25px 25px 25px
+        color: #fff
+        border-radius: 0 0 4px 4px
+        h2
+          font: 30px $PFDinTextCondProItalic
+          text-transform: uppercase
+          margin-bottom: 30px
+        p.description
+          font-size: 14px
+          opacity: .5
+        p.information
+          font-size: 18px
+          margin-bottom: 30px
+  .bottom
+    position: absolute
+    //height: 79px
+    width: 100%
+    bottom: 0
+    .privacy-policy-wrap
+      display: table
+      width: 100%
+      height: 79px
+      .privacy-policy
+        font-size: 18px
+        color: $main-color
+        display: table-cell
+        vertical-align: middle
+        a
+          color: $main-color
+          border-color: $main-color
+          &:hover
+            border-color: $main-color
+    .dev
+      display: table
+      width: 100%
+      height: 79px
+      .dev-text-wrap
+        display: table-cell
+        width: 100%
+        vertical-align: middle
+      p
+        margin-right: 5px
+        font-size: 12px
+        color: #46332f
+        display: inline
+      a
+        display: inline
+        img
+          width: 121px
+
+  /*  POPUPS  */
+#call-back-form, #call-back-success
+  position: relative
+  padding: 20px
+  width: auto
+  max-width: 340px
+  margin: 20px auto
+  .cbf-top
+    width: 100%
+    height: 20px
+    .cbft-colored
+      height: 100%
+      width: 135px
+      background: url("../img/popup-from-header.png") left 0 no-repeat
+  .mfp-close
+    color: $accent-color
+    width: 25px
+    height: 25px
+    border: 1px solid $accent-color
+    border-radius: 50%
+    line-height: 24px
+    top: 14px
+    right: -2px
+.cbf-form
+  width: 100%
+  background-color: #003D5E
+  border-radius: 0 4px 4px 4px
+  color: #fff
+  padding-top: 45px
+  padding-bottom: 35px
+  h3
+    font: 22px "GothamPro", sans-serif
+    text-transform: uppercase
+    text-align: center
+    margin-bottom: 25px
+  p
+    text-align: center
+    padding: 0 50px
+    font-size: 16px
+    margin-bottom: 10px
+  form
+    padding: 0 40px
+    text-align: center
+    label
+      span
+        padding-left: 10px
+        color: #fff
+        opacity: .5
+        margin-bottom: 5px
+        font-size: 14px
+        display: inline-block
+        width: 100%
+      input
+        padding: 17px 10px
+        width: 100%
+        color: #003D5E
+        border: none
+        border-radius: 4px
+        margin-bottom: 15px
+    input[type=submit]
+      margin-top: 24px
+#video
+  width: 750px
+  position: relative
+  margin: 20px auto
+  .cbf-top
+    width: 100%
+    height: 20px
+    .cbft-colored
+      height: 100%
+      width: 135px
+      background: url("../img/popup-from-header.png") left 0 no-repeat
+  .mfp-close
+    color: $accent-color
+    width: 25px
+    height: 25px
+    border: 1px solid $accent-color
+    border-radius: 50%
+    line-height: 24px
+    top: -4px
+    right: -21px
+  .cbf-video
+    padding: 55px 30px 25px
+    width: 100%
+    background-color: #003D5E
+    border-radius: 0 4px 4px 4px
+    color: #fff
+    h3
+      font: 22px "GothamPro", sans-serif
+      text-transform: uppercase
+      text-align: center
+      margin-bottom: 25px
+    iframe
+      width: 690px
+      height: 390px
+      border: none
+      box-shadow: 0 0 0 4px rgba(255,255,255,.67)
+@import "media"
